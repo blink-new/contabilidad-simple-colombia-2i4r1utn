@@ -38,14 +38,14 @@ export default function Dashboard() {
   return (
     <div className="space-y-6">
       {/* Welcome section */}
-      <div className="bg-gradient-to-r from-blue-600 to-blue-700 rounded-xl p-6 text-white">
+      <div className="bg-gradient-to-r from-red-600 to-red-700 rounded-xl p-6 text-white">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl font-bold mb-2">¡Bienvenido de vuelta!</h1>
-            <p className="text-blue-100">Aquí tienes un resumen de tu actividad contable</p>
+            <p className="text-red-100">Aquí tienes un resumen de tu actividad contable</p>
           </div>
           <div className="text-right">
-            <p className="text-blue-100 text-sm">Período actual</p>
+            <p className="text-red-100 text-sm">Período actual</p>
             <p className="text-xl font-semibold">Enero 2024</p>
           </div>
         </div>
@@ -88,8 +88,8 @@ export default function Dashboard() {
         <Card>
           <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
             <CardTitle className="text-sm font-medium text-slate-600">Ingresos Bancarios</CardTitle>
-            <div className="p-2 bg-blue-100 rounded-lg">
-              <DollarSign className="w-4 h-4 text-blue-600" />
+            <div className="p-2 bg-red-100 rounded-lg">
+              <DollarSign className="w-4 h-4 text-red-600" />
             </div>
           </CardHeader>
           <CardContent>
@@ -153,17 +153,17 @@ export default function Dashboard() {
                   <div className="flex items-center gap-3">
                     <div className={`p-2 rounded-lg ${
                       transaction.type === 'venta' ? 'bg-green-100' :
-                      transaction.type === 'gasto' ? 'bg-red-100' : 'bg-blue-100'
+                      transaction.type === 'gasto' ? 'bg-red-100' : 'bg-red-100'
                     }`}>
                       {transaction.type === 'venta' ? (
                         <TrendingUp className={`w-4 h-4 ${
                           transaction.type === 'venta' ? 'text-green-600' :
-                          transaction.type === 'gasto' ? 'text-red-600' : 'text-blue-600'
+                          transaction.type === 'gasto' ? 'text-red-600' : 'text-red-600'
                         }`} />
                       ) : transaction.type === 'gasto' ? (
                         <TrendingDown className="w-4 h-4 text-red-600" />
                       ) : (
-                        <DollarSign className="w-4 h-4 text-blue-600" />
+                        <DollarSign className="w-4 h-4 text-red-600" />
                       )}
                     </div>
                     <div>

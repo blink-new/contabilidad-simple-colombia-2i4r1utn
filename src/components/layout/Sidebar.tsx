@@ -50,11 +50,13 @@ export default function Sidebar({ currentPage, onPageChange }: SidebarProps) {
       <div className="flex flex-col h-full">
         {/* Logo */}
         <div className="flex items-center gap-3 p-6 border-b border-slate-200">
-          <div className="flex items-center justify-center w-10 h-10 bg-blue-600 rounded-lg">
-            <Calculator className="w-6 h-6 text-white" />
-          </div>
+          <img 
+            src="/logo.png" 
+            alt="RegimenSimple.com" 
+            className="h-10 w-auto"
+          />
           <div>
-            <h1 className="text-lg font-semibold text-slate-900">ContaSimple</h1>
+            <h1 className="text-lg font-semibold text-slate-900">RegimenSimple.com</h1>
             <p className="text-sm text-slate-500">Portal Cliente</p>
           </div>
         </div>
@@ -72,7 +74,7 @@ export default function Sidebar({ currentPage, onPageChange }: SidebarProps) {
                 className={cn(
                   "w-full flex items-center gap-3 px-3 py-2.5 text-left rounded-lg transition-colors",
                   isActive 
-                    ? "bg-blue-50 text-blue-700 border border-blue-200" 
+                    ? "bg-red-50 text-red-700 border border-red-200" 
                     : "text-slate-600 hover:bg-slate-50 hover:text-slate-900"
                 )}
               >

@@ -38,7 +38,7 @@ export default function Header() {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" className="flex items-center gap-2 px-2">
                 <Avatar className="w-8 h-8">
-                  <AvatarFallback className="bg-blue-100 text-blue-700">
+                  <AvatarFallback className="bg-red-100 text-red-700">
                     <User className="w-4 h-4" />
                   </AvatarFallback>
                 </Avatar>
