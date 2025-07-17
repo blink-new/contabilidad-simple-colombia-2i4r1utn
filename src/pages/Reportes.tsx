@@ -77,7 +77,7 @@ export default function Reportes() {
           <h1 className="text-2xl font-bold text-slate-900">Reportes</h1>
           <p className="text-slate-600">Genera reportes detallados de tu actividad contable</p>
         </div>
-        <Button onClick={handleExportReport} className="bg-blue-600 hover:bg-blue-700">
+        <Button onClick={handleExportReport} className="bg-red-600 hover:bg-red-700">
           <Download className="w-4 h-4 mr-2" />
           Exportar Reporte
         </Button>

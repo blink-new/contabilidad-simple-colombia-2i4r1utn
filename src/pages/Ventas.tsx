@@ -139,7 +139,7 @@ export default function Ventas() {
           <h1 className="text-2xl font-bold text-slate-900">Ventas</h1>
           <p className="text-slate-600">Registra y gestiona todas tus ventas</p>
         </div>
-        <Button onClick={() => setShowForm(!showForm)} className="bg-blue-600 hover:bg-blue-700">
+        <Button onClick={() => setShowForm(!showForm)} className="bg-red-600 hover:bg-red-700">
           <Plus className="w-4 h-4 mr-2" />
           Nueva Venta
         </Button>
@@ -226,7 +226,7 @@ export default function Ventas() {
               </div>
 
               <div className="flex gap-2">
-                <Button type="submit" className="bg-blue-600 hover:bg-blue-700">
+                <Button type="submit" className="bg-red-600 hover:bg-red-700">
                   Guardar Venta
                 </Button>
                 <Button type="button" variant="outline" onClick={() => setShowForm(false)}>
